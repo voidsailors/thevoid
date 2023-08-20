@@ -1,0 +1,20 @@
+<script>
+var air = 0
+	var speed = 30
+	var wspeed = 15
+	
+	if(wspeed < speed){
+	
+		if( air > 0){
+			air = air - 0.1;
+		}
+	}else if(wspeed > speed){
+	
+		if(air < 1){
+			air = air + 0.1;
+		}
+		
+	}
+
+	document.write(air);
+</script>
